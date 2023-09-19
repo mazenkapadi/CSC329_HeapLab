@@ -11,7 +11,7 @@ public class Heap {
     }
 
     public int getParentIndex(int index) {
-        //return (index - 1) / 2; Why would this not work? If we only have ints wouldnt it automatically round down?
+        //return (index - 1) / 2; Why would this not work? If we only have ints wouldn't it automatically round down?
         return Math.floorDiv(index - 1, 2);
     }
 
