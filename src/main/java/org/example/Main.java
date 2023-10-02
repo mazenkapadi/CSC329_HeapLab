@@ -1,17 +1,23 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+/**
+ * The main class for demonstrating the Heap data structure.
+ */
 public class Main {
     public static void main(String[] args) {
-       Heap h = new Heap();
-       h.add(20);
-       h.add(40);
-       h.add(30);
-       h.add(50);
+        // Create a new instance of the Heap class
+        Heap h = new Heap();
 
-       h.show();
-       System.out.println(h.getMin());
+        // Add elements to the heap
+        h.add(20);
+        h.add(40);
+        h.add(30);
+        h.add(50);
 
+        // Display the contents of the heap
+        h.show();
+
+        // Get and print the minimum value in the heap
+        System.out.println("Minimum value in the heap: " + h.getMin());
     }
 }
