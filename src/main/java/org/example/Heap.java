@@ -22,7 +22,8 @@ public class Heap {
      * @return The index of the parent node.
      */
     public int getParentIndex(int index) {
-        return Math.floorDiv(index - 1, 2);
+//        return Math.floorDiv(index - 1, 2);
+        return (index - 1) / 2;
     }
 
     /**
